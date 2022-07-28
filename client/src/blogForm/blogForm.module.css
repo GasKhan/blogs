@@ -1,0 +1,63 @@
+.blogForm {
+  background-color: #f3f3f9;
+  /* padding: 300px 50px; */
+  min-height: 100vh;
+}
+
+.container {
+  padding: 10px 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form {
+  background-color: #fff;
+  padding: 12px 7px;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 200;
+  color: #e8667e;
+}
+
+.input,
+.textarea {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.input {
+  height: 40px;
+  padding: 3px 7px;
+}
+
+.textarea {
+  min-height: 400px;
+  padding: 5px 10px;
+  resize: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  background-color: #f3f3f9;
+  min-height: 30px;
+  min-width: 200px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e8667e;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  cursor: pointer;
+}
