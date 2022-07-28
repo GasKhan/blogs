@@ -1,0 +1,38 @@
+.blogsWrapper {
+  background-color: #f3f3f9;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 200;
+  color: #e8667e;
+  text-align: center;
+}
+
+.blogs {
+  padding: 10px 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blogsList {
+  list-style: none;
+  padding: 0;
+}
+
+.blog {
+  padding: 10px 3px;
+  border-bottom: 1px solid #cecece;
+  cursor: pointer;
+}
+
+.blog:hover {
+  text-decoration: underline;
+}
+
+.blog:nth-child(even) {
+  background-color: #fff;
+}

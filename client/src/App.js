@@ -1,10 +1,12 @@
 import './App.css';
-import BlogForm from './blogForm/BlogForm';
+import BlogForm from './components/blogForm/BlogForm';
+import Blogs from './components/blogs/Blogs';
 
 function App() {
   return (
     <div className="App">
-      <BlogForm />
+      <Blogs />
+      {/* <BlogForm /> */}
     </div>
   );
 }

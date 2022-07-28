@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import classes from './blogForm.module.css';
-import { createBlog } from '../API/index';
+import { createBlog } from '../../API/index';
 
 const BlogForm = () => {
   const [title, setTitle] = useState('');
