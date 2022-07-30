@@ -1,7 +1,5 @@
 .blogsWrapper {
-  background-color: #f3f3f9;
-  min-height: 100vh;
-  padding: 50px 20px;
+  padding: 20px 20px;
 }
 
 .title {
@@ -26,13 +24,37 @@
 .blog {
   padding: 10px 3px;
   border-bottom: 1px solid #cecece;
-  cursor: pointer;
-}
-
-.blog:hover {
-  text-decoration: underline;
 }
 
 .blog:nth-child(even) {
   background-color: #fff;
+}
+
+.blogTitle {
+  margin: 7px 0;
+  font-weight: 500;
+}
+
+.blogController {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogController a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.blogController a:hover {
+  text-decoration: underline;
+}
+
+.blogDelete {
+  padding: 3px 8px;
+  color: #fff;
+  background-color: #e8667e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }

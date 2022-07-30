@@ -1,6 +1,4 @@
 .about {
-  background-color: #f3f3f9;
-
   padding: 20px;
 }
 
@@ -15,4 +13,8 @@
   font-size: 37px;
   line-height: 42px;
   font-weight: 200;
+}
+
+.text {
+  color: #777676;
 }
