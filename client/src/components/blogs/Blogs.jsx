@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 import classes from './blogs.module.css';
-import { fetchBlogs } from '../../API/index';
 import fetchBlogsThunk from '../../redux/fetchBlogsThunk';
+import deleteBlogThunk from '../../redux/deleteBlogThunk';
 
 const Blogs = () => {
   const blogs = useSelector((state) => state.blogs);
@@ -26,7 +26,12 @@ const Blogs = () => {
                 <h4 className={classes.blogTitle}>{blog.title}</h4>
                 <div className={classes.blogController}>
                   <Link to={`/blog/${blog.id}`}>open</Link>
-                  <button className={classes.blogDelete}>delete</button>
+                  <button
+                    className={classes.blogDelete}
+                    onClick={() => dispatch(deleteBlogThunk(blog.id))}
+                  >
+                    delete
+                  </button>
                 </div>
               </li>
             );

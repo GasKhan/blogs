@@ -21,11 +21,25 @@ class BlogController {
     }
   }
 
-  async getOneBlog(req, res) {
+  // async getOneBlog(req, res) {
+  //   try {
+  //     const { id } = req.params;
+
+  //     const blog = await Blog.findOne({
+  //       where: { id },
+  //     });
+
+  //     res.json(blog);
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
+
+  async deleteOneBlog(req, res) {
     try {
       const { id } = req.params;
 
-      const blog = await Blog.findOne({
+      const blog = await Blog.destroy({
         where: { id },
       });
 

@@ -1,8 +1,12 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import classes from './blogForm.module.css';
 import { createBlog } from '../../API/index';
 
 const BlogForm = () => {
+  const navigate = useNavigate();
+
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
@@ -17,11 +21,13 @@ const BlogForm = () => {
   function addNewBlog(e) {
     e.preventDefault();
 
-    if ((title, body)) {
+    if ((title.trim(), body.trim())) {
       createBlog(title, body);
 
       setTitle('');
       setBody('');
+
+      navigate('/');
     }
   }
 
